@@ -1,5 +1,6 @@
 function transliterate(text) {
-  var transliteratedString = [], ABC = "abcdefghijklmnopqrstuvwxyz", offsetABC = "cdefghijklmnopqrstuvwxyzab", i, currentChar, transliteratedChar;
+  var transliteratedString = [], ABC = "abcdefghijklmnopqrstuvwxyz",
+  offsetABC = "cdefghijklmnopqrstuvwxyzab", i, currentChar, transliteratedChar;
 
   for (i = 0; i < text.length; i++) {
     currentChar = text.charAt(i);
@@ -10,10 +11,10 @@ function transliterate(text) {
       transliteratedString.push(transliteratedChar);
     }
   }
-  return transliteratedString.join("");
+  console.log(transliteratedString.join(""));
 }
 
-console.log(transliterate("g fmnc wms bgblr rpylqjyrc gr zw fylb. " +
-      "rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb " +
-      "gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. " +
-      "sqgle qrpgle. kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj."));
+transliterate("g fmnc wms bgblr rpylqjyrc gr zw fylb. " +
+  "rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb " +
+  "gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. " +
+  "sqgle qrpgle. kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj.");
