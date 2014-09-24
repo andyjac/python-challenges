@@ -29,4 +29,4 @@ translate(theText)
     join theList characters together into a single string
     return that string
 
-translate(text) ==> should return: "this is my text."
+translate(theText) ==> should return: "this is my text."
