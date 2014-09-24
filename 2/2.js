@@ -1,11 +1,10 @@
 function transliterate(text) {
   var transliteratedString = [], ABC = "abcdefghijklmnopqrstuvwxyzab",
-  listifiedABC, i, currentChar, transliteratedChar;
+  i, currentChar, transliteratedChar;
 
   for (i = 0; i < text.length; i++) {
-    listifiedABC = ABC.split("");
     currentChar = text.charAt(i);
-    transliteratedChar = ABC.charAt(listifiedABC.indexOf(text.charAt(i) + 2));
+    transliteratedChar = ABC.charAt(ABC.indexOf(currentChar));
     if (ABC.indexOf(currentChar) === -1) {
       transliteratedString.push(currentChar);
     } else {
