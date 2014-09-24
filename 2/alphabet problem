@@ -1,0 +1,32 @@
+alphabet problem:
+
+1. loop through users text
+2. for each character in their text, check whether or not the character is a letter or a symbol (i.e. a form of puncuation or a space)
+3. if it is a symbol, simply add the character to a list as is
+4. if the character is a letter, find that same letter in a list containing the entire sequential alphabet
+5. once the character has been found in the alphabet, move forward two letters and return that character (i.e. the letter "a" should return the letter "c")
+6. take the returned letter and add it to the list with the other translated letters and symbols
+
+pseudo-code:
+
+theText = 'rfgq gq kv rcur.'
+theList = []
+theAlphabet = 'abcdefghijklmnopqrstuvxyz'
+
+translate(theText)
+    for each character in theText
+
+        if the character is not a letter
+
+            add it to theList
+
+        however if the character is a letter
+
+            find the letter in theAlphabet
+            advance forward two characters in theAlphabet
+            add the letter found there to theList
+
+    join theList characters together into a single string
+    return that string
+
+translate(text) ==> should return: "this is my text."
